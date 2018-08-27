@@ -23,7 +23,7 @@
 			}
 			function calc(){  
 				var res = document.getElementById('res').innerHTML;
-				var claclRes=eval(res);
+				var claclRes=calcString(res);
 				console.log(claclRes);
 				if (claclRes=='Infinity')
 					document.getElementById("res").innerHTML = "Cannot division by zero";
@@ -35,4 +35,7 @@
 			function clearDiv(){  
 				document.getElementById("res").innerHTML = "0";
 			
+			}
+			function calcString(fn) {
+			  return new Function('return ' + fn)();
 			}
