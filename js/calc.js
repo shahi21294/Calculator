@@ -20,10 +20,20 @@
 				}else {
 					document.getElementById("res").innerHTML = res+objButton;	
 				}
+				
+				
+				if(isNaN(objButton)){
+					var claclRes=Math.round(calcString(res)*100)/100;
+					
+					if (claclRes=='Infinity')
+						document.getElementById("res").innerHTML = "Cannot division by zero";
+					else 
+						document.getElementById("res").innerHTML = claclRes+objButton;
+				 }
 			}
 			function calc(){  
 				var res = document.getElementById('res').innerHTML;
-				var claclRes=calcString(res);
+				var claclRes=Math.round(calcString(res)*100)/100;
 				console.log(claclRes);
 				if (claclRes=='Infinity')
 					document.getElementById("res").innerHTML = "Cannot division by zero";
