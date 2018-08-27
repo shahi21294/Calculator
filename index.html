@@ -11,23 +11,40 @@
     <div class="calculator">
       <div class="calcDisplay" id="res">0</div>
       <div class="calcKey">
-        <button value="+" onclick='getKey(this)' class="keyOpr" >+</button>
-        <button value="-" onclick='getKey(this)' class="keyOpr" >-</button>
-        <button value="*" onclick='getKey(this)' class="keyOpr" >x</button>
-        <button value="/" onclick='getKey(this)' class="keyOpr" >/</button>
-        <button value="7" onclick='getKey(this)'>7</button>
-        <button value="8" onclick='getKey(this)'>8</button>
-        <button value="9" onclick='getKey(this)'>9</button>
-        <button value="4" onclick='getKey(this)'>4</button>
-        <button value="5" onclick='getKey(this)'>5</button>
-        <button value="6" onclick='getKey(this)'>6</button>
-        <button value="1" onclick='getKey(this)'>1</button>
-        <button value="2" onclick='getKey(this)'>2</button>
-        <button value="3" onclick='getKey(this)'>3</button>
-        <button value="0" onclick='getKey(this)'>0</button>
-        <button value="." onclick='getKey(this)' >.</button>
-        <button value="ac" onclick='clearDiv()'>AC</button>
-        <button class="keyEqual" onclick="calc()" >=</button>
+		
+        
+        
+        <button value="percent" onclick='getKey(this.value)' class="keyOpr" >%</button>
+		<button value="radical" onclick='getKey(this.value)' class="keyOpr" >√</button>
+		<button value="x2" onclick='getKey(this.value)' class="keyOpr" >x2</button>
+		<button value="1/x" onclick='getKey(this.value)' class="keyOpr" >1/x</button>
+		<button value="percent" onclick='getKey(this.value)' class="keyOpr" >CE</button>
+		<button value="radical" onclick='getKey(this.value)' class="keyOpr" >C</button>
+        <button value="x2" onclick='getKey(this.value)' class="keyOpr" >←</button>
+		<button value="/" onclick='getKey(this.value)' class="keyOpr" >÷</button>
+		
+		
+		
+		
+        
+        
+        <button value="7" onclick='getKey(this.value)'>7</button>
+        <button value="8" onclick='getKey(this.value)'>8</button>
+        <button value="9" onclick='getKey(this.value)'>9</button>
+		<button value="*" onclick='getKey(this.value)' class="keyOpr" >x</button>
+        <button value="4" onclick='getKey(this.value)'>4</button>
+        <button value="5" onclick='getKey(this.value)'>5</button>
+        <button value="6" onclick='getKey(this.value)'>6</button>
+		<button value="-" onclick='getKey(this.value)' class="keyOpr" >-</button>
+		
+        <button value="1" onclick='getKey(this.value)'>1</button>
+        <button value="2" onclick='getKey(this.value)'>2</button>
+        <button value="3" onclick='getKey(this.value)'>3</button>
+		<button value="+" onclick='getKey(this.value)' class="keyOpr" >+</button>
+		<button value="." onclick='getKey(this.value)' class="keyOpr" >±</button>
+        <button value="0" onclick='getKey(this.value)'>0</button>
+        <button value="." onclick='getKey(this.value)' >.</button>
+        <button onclick="calc()" class="keyOpr" >=</button>
       </div>
     </div>
   </div>
