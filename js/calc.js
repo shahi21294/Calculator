@@ -10,15 +10,15 @@
 				});
 				
 				var lastInout = opr.find(function(element) {
-				  return element ==objButton.value;
+				  return element ==objButton;
 				});
 				
 				if (lastChar && lastInout){
 					res = res.substring(0, res.length - 1);
-					res =res+objButton.value;
+					res =res+objButton;
 					document.getElementById("res").innerHTML = res;	
 				}else {
-					document.getElementById("res").innerHTML = res+objButton.value;	
+					document.getElementById("res").innerHTML = res+objButton;	
 				}
 			}
 			function calc(){  
